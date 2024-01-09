@@ -1,0 +1,60 @@
+@keyframes changeBgColor {
+    10% { background-color: #e30bff;background-color: #a217ff; } 
+    20% { background-color: #a217ff; } 
+    30% { background-color: #1874fd; } 
+    40% { background-color: #27f38d; } 
+    50% { background-color: #0dda0d; } 
+    60% { background-color: #c6eb20; } 
+    70% { background-color: #fffb00ea; } 
+    100% { background-color: #ffffff; } 
+  }
+  
+  
+  .calculator {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 6px;
+    padding: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: #8f8f8f;
+  }
+  
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    animation: changeBgColor 5s infinite; 
+  }
+  
+  .display {
+    width: 92%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #ebe4e4;
+  }
+  
+  .keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+  }
+  
+  button {
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #000000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 1px solid rgb(255, 255, 255);
+    color: #ffffff;
+  }
+  
+  button:hover {
+    background-color: #8f8f8f;
+  }
+  
